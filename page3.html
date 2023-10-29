@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- link to css -->
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+    <title>Page 3</title>
+</head>
+<body>
+  <!-- link to the images with it's width and height -->
+    <header>
+        <img src="Images/christmas-1574116_1280.jpg" alt="Banner Image" width="400" height="10">
+    </header>
+  
+   <!-- link to other sites-->
+    <nav>
+        <ul>
+            <li><a href="index.html" tabindex="1">Home</a></li>
+            <li><a href="page1.html" tabindex="2">Page 1</a></li>
+            <li><a href="page2.html" tabindex="3">Page 2</a></li>
+            <li><a href="https://www.columbusstate.edu/" tabindex="4">CSU's Main Page</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Page 3: – Form Validation</h1>
+      
+          <form id="myForm" action="https://webdevbasics.net/scripts/yoga.php" method="post" onsubmit="return validateForm()">
+              <label for="firstName">First Name:</label>
+              <input type="text" id="firstName" name="firstName" required size="30" maxlength="50" placeholder="Enter your first name"><br>
+
+              <label for="lastName">Last Name:</label>
+              <input type="text" id="lastName" name="lastName" required size="30" maxlength="50" placeholder="Enter your last name"><br>
+
+              <label for="birthYear">Birth Year:</label>
+              <input type="number" id="birthYear" name="birthYear" required min="1900" max="2023"><br>
+
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email"><br>
+
+              <label for="username">Username:</label>
+              <input type="text" id="username" name="username" required minlength="5" maxlength="10"><br>
+
+              <label for="password">Password:</label>
+              <input type="password" id="password" name="password" required minlength="8"><br>
+
+              <label for="reenterPassword">Re-enter Password:</label>
+              <input type="password" id="reenterPassword" name="reenterPassword" required minlength="8"><br>
+
+              <label for="phoneNumber">Phone Number:</label>
+              <input type="tel" id="phoneNumber" name="phoneNumber" pattern="\d{3}-\d{3}-\d{4}" placeholder="###-###-####"><br>
+
+              <input type="submit" value="Submit">
+          </form>
+    </main>
+
+  <aside>
+    <h3>SVG</h3>
+    <img src="Images/images.svg" alt="Pixels, my super smiley face" role="img" aria-labelledby="Star Smiling">
+    
+    <svg id="example" xmlns="http://www.w3.org/2000/svg" width="100" height="100">
+      <title id="title">Smiley face</title>
+      <description id="description">A pixel art representation of a smiley face.</description>
+      
+      <circle cx="50" cy="50" r="40" fill="orange" />
+      <circle cx="30" cy="40" r="5" fill="black" stroke="white" />
+      <circle cx="70" cy="40" r="5" fill="black" stroke="white"/>
+      <path d="M35 70 Q50 90 65 70" fill="transparent" stroke="black" stroke-width="2" />
+    </svg>
+  </aside>
+
+  
+
+
+    <footer>
+        <address>
+            <p>Contact Information:</p>
+            <p>Email: kola_shreya@students.columbusstate.edu</p>
+            <p>Phone: +1 (706) 315-5584</p>
+        </address>
+        <p>&copy; 2023 My Website</p>
+    </footer>
+</body>
+</html>

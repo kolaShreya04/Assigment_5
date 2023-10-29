@@ -1,46 +1,3 @@
-/* Link the stylesheet in every page */
-/* You don't need to specify this in the CSS file */
-
-/* Style the semantic tags: header, footer, nav, main */
-header {
-    background-color: #333; /* Change to your preferred color*/ 
-    color: #fff; /* Change to your preferred text color*/
-    text-align: center;
-    padding: 20px;
-}
-
-nav {
-    background-color: #444; 
-    padding: 10px;
-}
-
-nav li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav ul li a {
-    color: blue;
-    font-style: italic;
-}
-
-/*  hover effect to navigation links */
-nav ul li a:hover {
-  /* text-decoration: none;  Remove underline */
-  color: red; /* red text color */
-}
-
-main {
-    padding: 20px;
-}
-
-footer {
-    background-color: #333; /* Change to your preferred color */
-    color: #fff; /* Change to your preferred text color */
-    text-align: center;
-    padding: 10px;
-}
-
 /* Add a grid layout using grid-template-areas */
 body {
     display: grid;
@@ -53,17 +10,71 @@ body {
     grid-template-rows: auto;
 }
 
+/* Style the semantic tags: header, footer, nav, main */
+header {
+  grid-area: 1 / 1/ 1/ 4;
+    background-color: #333; /* Change to your preferred color*/ 
+    color: #fff; /* Change to your preferred text color*/
+    text-align: center;
+    padding: 20px;
+}
+
+nav {
+  grid-area: 2 / 1 / 2 / 1;
+  background-color: #444;
+  text-align: down;
+  padding: 10px;
+}
+
+nav li {
+    display: inline;
+}
+
+nav ul li a {
+  font-style: italic;
+  color: white;
+  text-decoration: none;
+}
+
+/*  hover effect to navigation links */
+nav ul li a:hover {
+  color: red; /* red text color */
+}
+
+
+main {
+  grid-area: 2 / 2 / 2 / 2; 
+    padding: 20px;
+} 
+
+
+aside{
+  grid-area: 2 / 3 / 2 / 3; 
+  background-color: gray;
+  padding: 10px;
+}
+
+footer {
+  grid-area: 4 / 1 / 4 / 4; 
+    background-color: #333; /* Change to your preferred color */
+    color: #fff; /* Change to your preferred text color */
+    text-align: center;
+    padding: 10px;
+}
+
+
+
 /* Write styles for body, h1, p, img, ol, li, ul, table, th, td */
 body {
-    font-family: Arial, sans-serif; /* Change to your preferred font family */
-    background-color: #f0f0f0; /* Change to your preferred background color */
-    color: #333; /* Change to your preferred text color */
+    font-family: Arial, sans-serif; 
+    background-color: #f0f0f0; 
+    color: #333; 
     margin: 0;
 }
 
 h1 {
-    font-size: 2em; /* Change to your preferred font size */
-    color: #444; /* Change to your preferred text color */
+    font-size: 2em; 
+    color: #444; 
 }
 
 p {
@@ -87,24 +98,40 @@ table {
     width: 100%;
     border-collapse: collapse;
 }
-
 th {
-    background-color: #000; /* Change to your preferred background color */
-    color: #fff; /* Change to your preferred text color */
+    background-color: #000; 
+    color: #fff; 
     padding: 10px;
-    font-size: 1.5em; /* Change to your preferred font size */
+    font-size: 1.5em; 
 }
-
 td {
     border: 1px solid #ddd; /* Add borders to table cells */
     padding: 10px;
-    font-size: 1em; /* Change to your preferred font size */
+    font-size: 1em; 
+}
+ol:nth-child(odd) li {
+    background-color: #f5f5f5; 
 }
 
-/* Style every other line of the ordered (Roman numeral) list on page 1 */
-/* Use the :nth-child() selector to target odd list items */
-/* You may adjust the background color to your preference */
-ol:nth-child(odd) li {
-    background-color: #f5f5f5; /* Change to your preferred background color */
-    /* Add any other styles you want for odd list items */
+
+/* media Queries */
+@media screen and (max-width: 500px) {
+  body {
+    background-color: tan;
+  }
+  header {
+    grid-area: 1 / 1/ 1/ 4;
+  }
+  nav {
+    grid-area: 2 / 1/ 2/ 4;
+  }
+  main {
+    grid-area: 3 / 1/ 3/ 4;
+  }
+  aside {
+    grid-area: 4 / 1/ 4/ 4;
+  }
+  footer {
+    grid-area: 5 / 1/ 5/ 4;
+  }
 }
