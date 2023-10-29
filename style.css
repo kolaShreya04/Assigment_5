@@ -13,8 +13,8 @@ body {
 /* Style the semantic tags: header, footer, nav, main */
 header {
   grid-area: 1 / 1/ 1/ 4;
-    background-color: #333; /* Change to your preferred color*/ 
-    color: #fff; /* Change to your preferred text color*/
+    background-color: #333; 
+    color: #fff; 
     text-align: center;
     padding: 20px;
 }
@@ -38,26 +38,27 @@ nav ul li a {
 
 /*  hover effect to navigation links */
 nav ul li a:hover {
-  color: red; /* red text color */
+  color: red; 
 }
 
 
 main {
   grid-area: 2 / 2 / 2 / 2; 
     padding: 20px;
+  background-color: gray;
 } 
 
 
 aside{
   grid-area: 2 / 3 / 2 / 3; 
-  background-color: gray;
+  background-color: #444;
   padding: 10px;
 }
 
 footer {
   grid-area: 4 / 1 / 4 / 4; 
-    background-color: #333; /* Change to your preferred color */
-    color: #fff; /* Change to your preferred text color */
+    background-color: #333; 
+    color: #fff; 
     text-align: center;
     padding: 10px;
 }
@@ -75,6 +76,11 @@ body {
 h1 {
     font-size: 2em; 
     color: #444; 
+}
+
+h2 {
+    font-size: 2em; 
+    color: white; 
 }
 
 p {
@@ -105,7 +111,7 @@ th {
     font-size: 1.5em; 
 }
 td {
-    border: 1px solid #ddd; /* Add borders to table cells */
+    border: 1px solid #fff; /* Add borders to table cells */
     padding: 10px;
     font-size: 1em; 
 }
@@ -121,17 +127,47 @@ ol:nth-child(odd) li {
   }
   header {
     grid-area: 1 / 1/ 1/ 4;
+    background-color: #5e057e;
+    color: #c299d0;
   }
   nav {
     grid-area: 2 / 1/ 2/ 4;
+    background-color: #5e057e;
+  }
+  nav ul li a {
+    color: #c299d0;
   }
   main {
     grid-area: 3 / 1/ 3/ 4;
+    background-color: #5e057e;
+    color: #c299d0;
   }
   aside {
     grid-area: 4 / 1/ 4/ 4;
+    background-color: #5e057e;
+    color: #c299d0;
   }
   footer {
     grid-area: 5 / 1/ 5/ 4;
+    background-color: #5e057e;
+    color: #c299d0;
+  }
+  h1 {
+      font-size: 2em; 
+      color:#c299d0 ; 
+  }
+
+  h2 {
+      font-size: 2em; 
+      color: #c299d0; 
+  }
+  ol:nth-child(odd) li {
+      background-color: #46037c; 
+  }
+  th {
+      background-color: #000; 
+      color: #c299d0; 
+      padding: 10px;
+      font-size: 1.5em; 
   }
 }
