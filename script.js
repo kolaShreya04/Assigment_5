@@ -25,7 +25,7 @@ function validateForm() {
 var canvas = document.getElementById("goodCanvas1");
 var ctx = canvas.getContext("2d");
 ctx.font= "30px Comic Sans MS";
-ctx.fillStyle = "green";
+ctx.fillStyle = "gray";
 ctx.fillRect(0,0,400,100);
 ctx.fillStyle = "white";
 ctx.textAlign = "center";
